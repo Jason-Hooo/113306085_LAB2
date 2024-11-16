@@ -1,15 +1,18 @@
 body {
 	background-color: #E0E0E0;
+	color: black;
+	font-family: Arial;
 }
 
 * {
     margin: 0;            
-}
+} 
 
 .heading {
     background-color: #CD853F;
     color: white;
-    line-height: 70px;
+    line-height: 30px;
+    padding-top: 15px;
     text-align: center;
 }
 
@@ -17,8 +20,31 @@ body {
 	font-family: Cursive;
 }
 
-.heading h4 {
+.heading p {
 	font-family: Arial;
+	font-size: 18;
+}
+
+/*
+我用不到這個
+ul { 
+	position: relative;
+	top: 0em;
+	left: 0em;
+	width: 0em;
+}
+*/
+
+@media all and (max-width: 1000px) {
+    body {
+		background-color: #EEE04C;
+    }
+}
+
+@media print {
+    body {
+		background-color: white;
+    }
 }
 
 .navbar {
@@ -34,7 +60,7 @@ body {
 
 .navbar a {
     color: white;
-    padding: 10px 100px;
+    padding: 10px 130px;
     text-decoration: none;
     font-size: 20px;
     display: block;
@@ -64,5 +90,4 @@ li:hover .dropdown {
 p {
 	padding-top: 22px;
     font-size: x-large;
-    font-family: Arial;
 }
